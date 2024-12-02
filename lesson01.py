@@ -10,8 +10,11 @@ if os.path.exists(dotenv_path):
 
 url = "https://api.foursquare.com/v3/places/search"
 
+
+place = input("Введите категорию: ")
+
 params = {
-  "query": "Кофе",
+  "query": place,
   "fields": "name,location,rating",
 }
 
